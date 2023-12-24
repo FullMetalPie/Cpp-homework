@@ -11,12 +11,5 @@ int main() {
     r1.read();
     r1.print();
 
-    Point p(5, 2);
-    if (r1.verifica(p)) {
-        cout << endl << "Il punto appartiene alla retta.";
-    } else {
-        cout << endl << "Il punto appartiene alla retta.";
-    }
-
     return 0;
 }
