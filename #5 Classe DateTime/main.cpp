@@ -9,7 +9,6 @@ int main() {
 
     dt1.read();
     dt2.read();
-    dt1.compare(dt2);
 
     return 0;
 }
