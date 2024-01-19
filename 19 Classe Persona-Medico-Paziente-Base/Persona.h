@@ -6,16 +6,16 @@
 using namespace std;
 
 class Persona {
-    public:
+    private:
         string nome;
         string cognome;
-    private:
+    public:
         /*COSTRUTTORI e DISTRUTTORE*/
         Persona();
         Persona(string name, string surname);
-        ~Persona();
+        virtual ~Persona();
         /*LEGGI*/
-        virtual void leggi();
+        virtual void leggi() = 0;
         /*STAMPA*/
         virtual void stampa();
 };

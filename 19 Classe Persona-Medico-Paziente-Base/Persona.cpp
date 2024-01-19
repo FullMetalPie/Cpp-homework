@@ -15,10 +15,8 @@ Persona::Persona(string name, string surname) {
 Persona::~Persona() {
 
 }
-/*LEGGI*/
-void Persona::leggi() {
-}
 /*STAMPA*/
 void Persona::stampa() {
-    cout << "ciao";
+    cout << endl <<"Nome: " << nome;
+    cout << endl << "Cognome: " << cognome << endl;
 }
