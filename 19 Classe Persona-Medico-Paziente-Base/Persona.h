@@ -18,7 +18,6 @@ class Persona {
         virtual void leggi();
         /*STAMPA*/
         virtual void stampa();
-}
-
+};
 
 #endif
