@@ -17,14 +17,22 @@ class Albergo : public Immobile {
         Albergo();
         Albergo(int dimensione);
         ~Albergo();
+        /*GETTER*/
+        float getCosto();
+        int getDim();
         /*OVERLOADING --*/
-        void operator--();
+        Stanza operator--();
         /*OVERLOADING !*/
         float operator!();
         /*STANZE LIBERE*/
         int stanzeLibere();
         /*INIZIALIZZA*/
         void inizializza();
+        /*NUMERO CAMERE LIBERE*/
+        int camereLibere();
+        /*OVERLOADING * */
+        float operator*(int p);
+        friend float operator*(int p, Albergo a);
 };
 
 #endif // ALBERGO_H

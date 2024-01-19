@@ -5,8 +5,6 @@ using namespace std;
 
 int main()
 {
-    Albergo a(2);
-
-    a.inizializza();
+    cout << "Hello world";
     return 0;
 }

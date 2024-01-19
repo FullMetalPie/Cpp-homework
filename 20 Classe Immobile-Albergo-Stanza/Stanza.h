@@ -28,7 +28,7 @@ class Stanza {
         bool getStato();
         /*OVERLOADING i/o*/
         friend ostream& operator<<(ostream& out, const Stanza room);
-        friend istream& operator>>(istream& inp, Stanza room);
+        friend istream& operator>>(istream& inp, Stanza& room);
 };
 
 #endif // STANZA_H

@@ -54,7 +54,7 @@ ostream& operator<<(ostream& out, const Stanza room) {
 
     return out;
 }
-istream& operator>>(istream& inp, Stanza room) {
+istream& operator>>(istream& inp, Stanza& room) {
     int n;
     float metri;
     int p;
@@ -79,10 +79,10 @@ istream& operator>>(istream& inp, Stanza room) {
     room.setPiano(p);
 
     do {
-        cout << "Stato camera: (1. occupata, 2. libera) ";
+        cout << "Stato camera: (0. occupata, 1. libera) ";
         inp >> s;
-    } while (s < 1 || s > 2);
-    if (s == 1) {
+    } while (s < 0 || s > 1);
+    if (s == 0) {
         room.setStato(false);
     } else {
         room.setStato(true);
