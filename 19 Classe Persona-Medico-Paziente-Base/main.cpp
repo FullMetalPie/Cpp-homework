@@ -1,12 +1,14 @@
 #include <iostream>
-#include "Persona.h"
+#include "Medico.h"
 
 using namespace std;
 
 int main() {
-    Persona p1;
+    Medico m;
 
-    p1.stampa();
+    m.leggi();
+
+    m.stampa();
 
     return 0;
 }
