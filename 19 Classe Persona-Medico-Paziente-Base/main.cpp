@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Medico.h"
+#include "Paziente.h"
 
 using namespace std;
 
 int main() {
-    Medico m;
+    Paziente m;
 
     m.leggi();
 
