@@ -14,7 +14,7 @@ class Paziente : public Persona {
     public:
         /*COSTRUTTORI e DISTRUTTORE*/
         Paziente();
-        Paziente(Data birthdate, string code);
+        Paziente(string name, string surname, Data birthdate, string code);
         ~Paziente();
         /*LEGGI*/
         void leggi();
