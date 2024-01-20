@@ -9,7 +9,7 @@ using namespace std;
 
 class Albergo : public Immobile {
     private:
-        float costoU;
+        static float costoU;
         Stanza* s;
         int dim;
     public:

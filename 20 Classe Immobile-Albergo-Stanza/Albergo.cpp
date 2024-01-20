@@ -3,9 +3,10 @@
 
 using namespace std;
 
+float Albergo::costoU = 100;
+
 /*COSTRUTTORE e DISTRUTTORE*/
 Albergo::Albergo() {
-    costoU = 100;
     s = nullptr;
     dim = 0;
 }
