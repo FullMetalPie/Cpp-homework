@@ -10,7 +10,7 @@ List::~List() {
     Node* pCancel = head;
 
     while (head != nullptr) {
-        head = head->getNext();
+        head = head->getPtrNext();
         delete pCancel;
         pCancel = head;
     }
