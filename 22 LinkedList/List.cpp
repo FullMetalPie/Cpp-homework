@@ -7,7 +7,13 @@ List::List() {
     head = nullptr;
 }
 List::~List() {
+    Node* pCancel = head;
 
+    while (head != nullptr) {
+        head = head->getNext();
+        delete pCancel;
+        pCancel = head;
+    }
 }
 bool List::isEmpty() {
     if (head == nullptr) {
