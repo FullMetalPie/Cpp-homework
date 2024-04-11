@@ -3,6 +3,7 @@
 
 using namespace std;
 
+/*COSTRUTTORI e DISTRUTTORE*/
 Stack::Stack() {
     top = nullptr;
 }
@@ -20,9 +21,11 @@ Stack::~Stack() {
         pAux = top;
     }
 }
+/*GET TOP*/
 Nodo* Stack::getTop() {
     return top;
 }
+/*POP e PUSH*/
 Nodo* Stack::pop() {
     Nodo* firstN = top;
     top = top->getNextPtr();
@@ -33,10 +36,43 @@ void Stack::push(int data) {
     //pNew.setNextPtr(top);
     top = pNew;
 }
+/*DISPLAY*/
 void Stack::display() {
-    Nodo* pAux = top;
-    while (pAux != nullptr) {
-        cout << pAux->getDato();
-        pAux = pAux->getNextPtr();
+    if (isEmpty()) {
+        cout << "Lista vuota";
+    } else {
+        Nodo* pAux = top;
+        while (pAux != nullptr) {
+            cout << pAux->getDato();
+            pAux = pAux->getNextPtr();
+        }
     }
+}
+/*DISPLAY TOP*/
+void Stack::displayTop() {
+    if (!isEmpty()) {
+        cout << top->getDato();
+    } else {
+        cout << "Lista vuota.";
+    }
+}
+/*DISPLAY LAST*/
+void Stack::displayLast() {
+    if (isEmpty()) {
+        cout << "Lista vuota.";
+    } else {
+        Nodo* pAux = top;
+        while (pAux->getNextPtr() != nullptr) {
+            pAux = pAux->getNextPtr();
+        }
+
+        cout << pAux->getDato();
+    }
+}
+/*VERIFICA SE è VUOTA*/
+bool Stack::isEmpty() {
+    if (top == nullptr) {
+        return true;
+    }
+    return false;
 }

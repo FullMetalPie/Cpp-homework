@@ -14,8 +14,8 @@ class Nodo {
         int getDato();
         Nodo* getNextPtr();
 
-        void setDato(int data); 
-        void setNextPtr(Nodo* next);      
+        void setDato(int data);
+        void setNextPtr(Nodo* next);
 };
 
 #endif
