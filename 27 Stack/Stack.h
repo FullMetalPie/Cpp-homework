@@ -25,7 +25,7 @@ class Stack {
         void displayTop();
         /*DISPLAY LAST*/
         void displayLast();
-        /*VERIFICA SE è VUOTA*/
+        /*VERIFICA SE E' VUOTA*/
         bool isEmpty();
 };
 

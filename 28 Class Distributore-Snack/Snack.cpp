@@ -36,8 +36,8 @@ Snack Snack::operator=(int val) {
 }
 /*OVERLOADING i/o*/
 ostream& operator<<(ostream& out, Snack& s) {
-    out << "Name: " + s.getName();
-    out << endl << "Code: " + s.getCode();
+    out << "Name: " << s.getName();
+    out << endl << "Code: " << s.getCode() << endl;
 
     return out;
 }
@@ -45,12 +45,14 @@ istream& operator>>(istream& in, Snack& s) {
     string nome;
     int codice;
 
-    cout << "Nome snack: ";
+    cout << "Snack name: ";
     in >> nome;
 
-    cout << "Codice snack: ";
+    cout << "Snack code: ";
     in >> codice;
 
-    s.set(nome, codice);
+    s.setName(nome);
+    s.setCode(codice);
+
     return in;
 }

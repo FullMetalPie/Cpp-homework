@@ -1,15 +1,19 @@
 #include <iostream>
-#include "Snack.h"
+#include "Distributore.h"
 
 using namespace std;
 
 int main()
 {
+    Distributore d;
     Snack s;
 
-    cout << s;
+    d.push(s);
+    d.push(s);
+    d.push(s);
+    d.push(s);
+    d.push(s);
+    d.push(s);
 
-    cin >> s;
-
-    cout << s;
+    d.display();
 }

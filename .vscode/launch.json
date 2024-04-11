@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/pietria20/Desktop/Cpp-assignments/20 Classe Immobile-Albergo-Stanza",
-      "program": "c:/Users/pietria20/Desktop/Cpp-assignments/20 Classe Immobile-Albergo-Stanza/build/Debug/outDebug",
+      "cwd": ".",
+      "program": "build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
