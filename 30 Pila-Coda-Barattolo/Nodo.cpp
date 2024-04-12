@@ -5,27 +5,28 @@ using namespace std;
 
 /*COSTRUTTORI*/
 Nodo::Nodo() {
-    dato = 0;
+    Barattolo b;
+    barattolo = b;
     nextPtr = nullptr;
 }
-Nodo::Nodo(int data) {
-    dato = data;
+Nodo::Nodo(Barattolo b) {
+    barattolo = b;
     nextPtr = nullptr;
 }
-Nodo::Nodo(int data, Nodo* next) {
-    dato = data;
+Nodo::Nodo(Barattolo b, Nodo* next) {
+    barattolo = b;
     nextPtr = next;
 }
 /*SETTER e GETTER*/
-int Nodo::getDato() {
-    return dato;
+Barattolo Nodo::getDato() {
+    return barattolo;
 }
 Nodo* Nodo::getNextPtr() {
     return nextPtr;
 }
 
-void Nodo::setDato(int data) {
-    dato = data;
+void Nodo::setDato(Barattolo b) {
+    barattolo = b;
 }
 void Nodo::setNextPtr(Nodo* next) {
     nextPtr = next;
