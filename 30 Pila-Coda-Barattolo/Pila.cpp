@@ -42,10 +42,16 @@ void Pila::display() {
     if (isEmpty()) {
         cout << "Lista vuota.";
     } else {
+        int cont = 0;
         Nodo* pAux = top;
-        while (pAux->getNextPtr() != nullptr) {
-            cout << pAux->getDato();
+
+        cout << "Stampa pila: ";
+
+        while (pAux != nullptr) {
+            cout << endl << "Elemento " << cont << endl;
+            cout << pAux->getDato().getName() << endl;
             pAux = pAux->getNextPtr();
+            cont++;
         }
     }
 }
