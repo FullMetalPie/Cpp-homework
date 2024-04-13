@@ -19,9 +19,12 @@ cioè quella con data di scadenza minore.
 */
 
 int main () {
-    Barattolo b;
+    Pila p;
+    Barattolo b1, b2;
 
-    cout << b;
+    p.push(b1);
+    p.push(b2);
+    p.display();
 
     return 0;
 }
