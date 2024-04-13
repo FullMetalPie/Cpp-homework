@@ -21,6 +21,8 @@ class Pila {
         void push(Barattolo b);
         /*DISPLAY*/
         void display();
+        /*VERIFICA SE E' VUOTA*/
+        bool isEmpty();
 };
 
 #endif
