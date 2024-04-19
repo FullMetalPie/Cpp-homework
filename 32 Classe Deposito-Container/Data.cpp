@@ -151,3 +151,12 @@ int confronta(Data d1, Data d2) {
 
     return flag;
 }
+
+/*OVERLOADING OUT*/
+ostream& operator<<(ostream& out, Data d) {
+    out << "Anno: " << d.getAnno() << endl;
+    out << "Mese: " << d.getMese() << endl;
+    out << "Giorno: " << d.getGiorno();
+
+    return out;
+}

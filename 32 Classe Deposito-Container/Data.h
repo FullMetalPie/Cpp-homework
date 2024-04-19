@@ -1,6 +1,10 @@
 #ifndef DATA_H
 #define DATA_H
 
+#include <iostream>
+
+using namespace std;
+
 class Data {
     private:
         int anno, mese, giorno;
@@ -32,6 +36,8 @@ class Data {
         /*CONFRONTO DATE*/
         friend int confronta(Data d1, Data d2);
 
+        /*OVERLOADING OUT*/
+        friend ostream& operator<<(ostream& out, Data d);
 };
 
-#endif // DATA_H
+#endif
