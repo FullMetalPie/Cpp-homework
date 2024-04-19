@@ -19,6 +19,8 @@ class Nodo {
         /*GET e SET*/
         void setNextPtr(Nodo* next);
 
+        Container getInfo();
+
         Nodo* getNextPtr();
         /*OVERLOADING <<*/
         friend ostream& operator<<(ostream& out, const Nodo n);

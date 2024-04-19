@@ -33,6 +33,8 @@ class Container {
         Data getStockDate();
         /*OVERLOADING OUTPUT*/
         friend ostream& operator<<(ostream& out,const Container& d);
+        /*OVERLOADING INPUT*/
+        friend istream& operator>>(istream& out, Container& d);
 };
 
 #endif

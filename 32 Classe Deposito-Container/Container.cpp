@@ -68,5 +68,36 @@ ostream& operator<<(ostream& out, const Container& d) {
     out << "Type: " << d.type << endl;
     out << "Weight: " << d.weight << endl;
     out << "Category: " << d.category << endl;
-    out << "Stock Date: " << d.stockDate;
+    out << endl << d.stockDate;
+}
+/*OVERLOADING INPUT*/
+istream& operator>>(istream& in, Container& d) {
+    int n;
+    cout << "Code: ";
+    in >> d.code;
+
+    cout << "Type: ";
+    in >> d.type;
+
+    cout << "Weight: ";
+    in >> d.weight;
+
+    cout << "Category: ";
+    in >> d.category;
+
+    do {
+        cout << "Anno: ";
+        in >> n;
+        d.stockDate.setAnno(n);
+
+        cout << "Mese: ";
+        in >> n;
+        d.stockDate.setAnno(n);
+
+        cout << "giorno: ";
+        in >> n;
+        d.stockDate.setAnno(n);
+    } while (d.stockDate.validaData() == 1);
+
+    return in;
 }

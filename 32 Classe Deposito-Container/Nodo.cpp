@@ -25,6 +25,10 @@ void Nodo::setNextPtr(Nodo* next) {
     nextPtr = next;
 }
 
+Container Nodo::getInfo() {
+    return container;
+}
+
 Nodo* Nodo::getNextPtr() {
     return nextPtr;
 }
