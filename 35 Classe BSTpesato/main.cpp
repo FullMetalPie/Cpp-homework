@@ -7,7 +7,7 @@ int main() {
     BSTpesato alberello;
 
     alberello.insertHelper(1);
-    cout << alberello.sumHelper();
+    cout << endl << alberello.sumHelper();
 
     return 0;
 }
