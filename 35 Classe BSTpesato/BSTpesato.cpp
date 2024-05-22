@@ -91,6 +91,7 @@ int BSTpesato::sumHelper() {
 }
 int BSTpesato::sum(TreeNode* root) {
     if (root) {
-        return (sum(root->getLeft()) + sum(root->getRight()) + root->getInfo());
+        return sum(root->getLeft()) + root->getInfo() + sum(root->getRight());
     }
+    return 0;
 }
